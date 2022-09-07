@@ -9,7 +9,7 @@ import styled, { css } from 'styled-components'
 import ArrowRight from 'components/Icons/ArrowRight'
 import LanguageSelector from 'components/LanguageSelector'
 import MenuFlyout from 'components/MenuFlyout'
-// import ThemeToggle from 'components/Toggle/ThemeToggle'
+import ThemeToggle from 'components/Toggle/ThemeToggle'
 import { TutorialIds } from 'components/Tutorial/TutorialSwap/constant'
 import { LOCALE_LABEL, SupportedLocale } from 'constants/locales'
 import useMixpanel, { MIXPANEL_TYPE } from 'hooks/useMixpanel'
@@ -151,14 +151,14 @@ export default function SettingsTab() {
               </RowBetween>
             )} */}
 
-            {/* <RowBetween style={{ marginTop: '15px' }}>
+            <RowBetween style={{ marginTop: '15px' }}>
               <RowFixed>
                 <StyledLabel>
                   <Trans>Dark Mode</Trans>
                 </StyledLabel>
               </RowFixed>
               <ThemeToggle id="toggle-dark-mode-button" isDarkMode={darkMode} toggle={toggleSetDarkMode} />
-            </RowBetween> */}
+            </RowBetween>
 
             <RowBetween style={{ marginTop: '15px' }}>
               <RowFixed>

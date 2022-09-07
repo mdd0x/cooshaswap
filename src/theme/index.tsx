@@ -108,7 +108,7 @@ export function colors(darkMode: boolean): Colors {
     advancedBorder: darkMode ? '#303e46' : '#dcdbdc',
 
     //primary colors
-    primary: '#31CB9E',
+    primary: '#009688',
 
     // border colors
     border: darkMode ? '#505050' : '#C1C1C1',

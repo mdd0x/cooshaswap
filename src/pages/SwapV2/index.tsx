@@ -1068,18 +1068,18 @@ export default function Swap({ history }: RouteComponentProps) {
 
           {(isShowLiveChart || isShowTradeRoutes || shouldRenderTokenInfo) && (
             <InfoComponentsWrapper>
-              {isShowLiveChart && (
+              {/* {isShowLiveChart && (
                 <LiveChartWrapper>
                   <LiveChart onRotateClick={handleRotateClick} currencies={currencies} />
                 </LiveChartWrapper>
-              )}
+              )} */}
               {isShowTradeRoutes && (
                 <RoutesWrapper isOpenChart={isShowLiveChart}>
                   <Flex flexDirection="column" width="100%">
                     <Flex alignItems={'center'}>
                       <RoutingIconWrapper />
                       <Text fontSize={20} fontWeight={500} color={theme.subText}>
-                        <Trans>Your trade route</Trans>
+                        <Trans>Your Trade Flow</Trans>
                       </Text>
                     </Flex>
                     <Routing trade={trade} currencies={currencies} formattedAmounts={formattedAmounts} />
