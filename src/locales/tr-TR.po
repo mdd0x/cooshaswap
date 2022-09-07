@@ -934,8 +934,8 @@ msgid "DEXs"
 msgstr ""
 
 #: src/components/Settings/index.tsx
-#~ msgid "Dark Mode"
-#~ msgstr "Koyu Tema"
+msgid "Dark Mode"
+msgstr "Koyu Tema"
 
 #: src/components/YieldPools/ProMMFarmGroup.tsx
 msgid "Deposit"
@@ -4134,6 +4134,10 @@ msgstr ""
 msgid "Your Staked {0}"
 msgstr ""
 
+#: src/pages/SwapV2/index.tsx
+msgid "Your Trade Flow"
+msgstr ""
+
 #: 
 #~ msgid "Your Transaction"
 #~ msgstr ""
@@ -4213,8 +4217,8 @@ msgid "Your trade is routed through one or more of these liquidity sources"
 msgstr ""
 
 #: src/pages/SwapV2/index.tsx
-msgid "Your trade route"
-msgstr "Alım-satım rotanız"
+#~ msgid "Your trade route"
+#~ msgstr "Alım-satım rotanız"
 
 #: src/components/TransactionSettings/index.tsx
 #: src/components/swapv2/SwapSettingsPanel/SlippageSetting.tsx

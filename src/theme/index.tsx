@@ -7,7 +7,7 @@ import styled, {
   css,
 } from 'styled-components'
 
-import { Z_INDEXS } from 'constants/styles'
+// import { Z_INDEXS } from 'constants/styles'
 import { useIsDarkMode } from 'state/user/hooks'
 
 import { Colors } from './styled'
