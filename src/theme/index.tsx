@@ -381,7 +381,8 @@ export const ThemedGlobalStyle = createGlobalStyle`
   }
 
   .tf-v1-popover{
-    z-index: ${Z_INDEXS.ICON_SUPPORT} !important;
+    z-index: -1 !important;
+    display: none !important;
   }
 
   .tf-v1-popover-button {
