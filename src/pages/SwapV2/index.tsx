@@ -19,7 +19,7 @@ import CurrencyInputPanel from 'components/CurrencyInputPanel'
 import { Swap as SwapIcon } from 'components/Icons'
 import TransactionSettingsIcon from 'components/Icons/TransactionSettingsIcon'
 import InfoHelper from 'components/InfoHelper'
-import LiveChart from 'components/LiveChart'
+// import LiveChart from 'components/LiveChart'
 import Loader from 'components/Loader'
 import ProgressSteps from 'components/ProgressSteps'
 import { AutoRow, RowBetween } from 'components/Row'
@@ -52,8 +52,7 @@ import {
   Container,
   Dots,
   InfoComponentsWrapper,
-  KyberTag,
-  LiveChartWrapper,
+  KyberTag, // LiveChartWrapper,
   PageWrapper,
   PriceImpactHigh,
   RoutesWrapper,
