@@ -381,7 +381,7 @@ export const ThemedGlobalStyle = createGlobalStyle`
   }
 
   .tf-v1-popover{
-    z-index: -1 !important;
+    z-index: -2 !important;
     display: none !important;
   }
 
