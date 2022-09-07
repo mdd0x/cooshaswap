@@ -44,5 +44,5 @@ export const LIST_TITLE = {
   EARN: t`Earn trading fees through our Pools / Farms`,
   DISCOVER: t`Discover trending soon tokens`,
   CAMPAIGN: t`Participate in our campaigns`,
-  VIEW_GUIDE: t`View our KyberSwap Guide again`,
+  VIEW_GUIDE: t`View our Coosha Guide again`,
 }

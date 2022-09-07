@@ -3732,7 +3732,7 @@ msgid "Welcome to Coosha Swap!"
 msgstr ""
 
 #: src/components/Tutorial/TutorialSwap/TutorialMobile.tsx
-msgid "Welcome to KyberSwap!"
+msgid "Welcome to Coohsa Swap!"
 msgstr ""
 
 #: 

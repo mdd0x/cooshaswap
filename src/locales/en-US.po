@@ -3679,8 +3679,8 @@ msgid "Welcome to Coosha Swap!"
 msgstr "Welcome to Coosha Swap!"
 
 #: src/components/Tutorial/TutorialSwap/TutorialMobile.tsx
-msgid "Welcome to KyberSwap!"
-msgstr "Welcome to KyberSwap!"
+msgid "Welcome to Coosha Swap!"
+msgstr "Welcome to Coosha Swap!"
 
 #: 
 #: 
