@@ -11,7 +11,7 @@ import styled, { DefaultTheme, keyframes } from 'styled-components'
 import { ReactComponent as TutorialSvg } from 'assets/svg/play_circle_outline.svg'
 import { ReactComponent as RoutingIcon } from 'assets/svg/routing-icon.svg'
 import AddressInputPanel from 'components/AddressInputPanel'
-import Banner from 'components/Banner'
+// import Banner from 'components/Banner'
 import { ButtonConfirmed, ButtonError, ButtonLight, ButtonPrimary } from 'components/Button'
 import { GreyCard } from 'components/Card/index'
 import Column from 'components/Column/index'
@@ -28,17 +28,17 @@ import { ShareButtonWithModal } from 'components/ShareModal'
 import { SwitchLocaleLink } from 'components/SwitchLocaleLink'
 import TokenWarningModal from 'components/TokenWarningModal'
 import { MouseoverTooltip } from 'components/Tooltip'
-import TopTrendingSoonTokensInCurrentNetwork from 'components/TopTrendingSoonTokensInCurrentNetwork'
-import TrendingSoonTokenBanner from 'components/TrendingSoonTokenBanner'
-import Tutorial, { TutorialType } from 'components/Tutorial'
+// import TopTrendingSoonTokensInCurrentNetwork from 'components/TopTrendingSoonTokensInCurrentNetwork'
+// import TrendingSoonTokenBanner from 'components/TrendingSoonTokenBanner'
+// import Tutorial, { TutorialType } from 'components/Tutorial'
 import TutorialSwap from 'components/Tutorial/TutorialSwap'
 import { TutorialIds } from 'components/Tutorial/TutorialSwap/constant'
 import AdvancedSwapDetailsDropdown from 'components/swapv2/AdvancedSwapDetailsDropdown'
 import ConfirmSwapModal from 'components/swapv2/ConfirmSwapModal'
 import GasPriceTrackerPanel from 'components/swapv2/GasPriceTrackerPanel'
 import LiquiditySourcesPanel from 'components/swapv2/LiquiditySourcesPanel'
-import MobileTokenInfo from 'components/swapv2/MobileTokenInfo'
-import PairSuggestion, { PairSuggestionHandle } from 'components/swapv2/PairSuggestion'
+// import MobileTokenInfo from 'components/swapv2/MobileTokenInfo'
+import { PairSuggestionHandle } from 'components/swapv2/PairSuggestion'
 import RefreshButton from 'components/swapv2/RefreshButton'
 import Routing from 'components/swapv2/Routing'
 import SettingsPanel from 'components/swapv2/SwapSettingsPanel'
@@ -708,7 +708,7 @@ export default function Swap({ history }: RouteComponentProps) {
         onDismiss={handleDismissTokenWarning}
       />
       <PageWrapper>
-        <Banner />
+        {/* <Banner /> */}
         {/* <TopTrendingSoonTokensInCurrentNetwork /> */}
         <Container>
           <SwapFormWrapper isShowTutorial={isShowTutorial}>

@@ -6,8 +6,8 @@ import { Flex } from 'rebass'
 import styled, { createGlobalStyle } from 'styled-components'
 import { CardinalOrientation, Step, Walktour, WalktourLogic } from 'walktour'
 
-import WelcomeImage from 'assets/images/tutorial_swap/welcome.png'
-import { ButtonOutlined, ButtonPrimary } from 'components/Button'
+// import WelcomeImage from 'assets/images/tutorial_swap/welcome.png'
+import { ButtonOutlined } from 'components/Button'
 import { ToggleItemType } from 'components/Collapse'
 import { TutorialType, getTutorialVideoId } from 'components/Tutorial'
 import { SUPPORTED_WALLETS } from 'constants/index'
@@ -116,28 +116,12 @@ const HighlightText = styled.span`
 function Welcome() {
   return (
     <Layout>
-      <img src={WelcomeImage} alt="welcome to kyberswap" style={{ maxWidth: '100%', marginTop: 10 }} />
+      {/* <img src={WelcomeImage} alt="welcome to kyberswap" style={{ maxWidth: '100%', marginTop: 10 }} /> */}
       <Desc>
         <Trans>
-          KyberSwap is a decentralized exchange (DEX) aggregator. We provide our traders with the{' '}
+          Coosha Swap is a decentralized exchange (DEX) aggregator. We provide our traders with the{' '}
           <HighlightText>best token prices</HighlightText> by analyzing rates across thousands of exchanges instantly!
         </Trans>
-      </Desc>
-      <Desc>
-        <Trans>
-          KyberSwap is also an automated market maker (AMM) with industry-leading liquidity protocols and{' '}
-          <HighlightText>concentrated liquidity</HighlightText>. Liquidity providers can add liquidity to our pools &{' '}
-          <HighlightText>earn fees</HighlightText>!
-        </Trans>
-      </Desc>
-      <Desc>
-        <Trans>
-          We created this <HighlightText>quick tutorial</HighlightText> guide for you to highlight KyberSwap&#39;s main
-          features.
-        </Trans>
-      </Desc>
-      <Desc>
-        <Trans>Do you wish to have a look?</Trans>
       </Desc>
     </Layout>
   )
@@ -245,17 +229,14 @@ const getListSteps = (isLogin: boolean) => {
     {
       title: (
         <Heading style={{ fontSize: 20 }}>
-          <Trans>Welcome to KyberSwap!</Trans>
+          <Trans>Welcome to Coosha Swap!</Trans>
         </Heading>
       ),
       customFooterRenderer: (logic: WalktourLogic) => (
         <Flex justifyContent={'space-between'} style={{ gap: 25, marginTop: 20 }}>
           <ButtonOutlined onClick={() => logic.close()}>
-            <Trans>Maybe later</Trans>
+            <Trans>Lets Started</Trans>
           </ButtonOutlined>
-          <ButtonPrimary onClick={() => logic.next()}>
-            <Trans>Let’s get started</Trans>
-          </ButtonPrimary>
         </Flex>
       ),
       stepNumber: 0,
@@ -287,7 +268,7 @@ const getListSteps = (isLogin: boolean) => {
         <Layout title={LIST_TITLE.SELECT_NETWORK}>
           <Desc>
             <Trans>
-              Choose your preferred network. KyberSwap is a multi chain platform that supports over 12 networks!
+              Choose your preferred network. Coosha Swap is a multi chain platform that supports over 12 networks!
             </Trans>
           </Desc>
           <ImageMobile imageName="step2.png" />

@@ -1,36 +1,37 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
-import { Trans } from '@lingui/macro'
+// eslint-disable-next-line no-use-before-define
+// import { ChainId } from '@kyberswap/ks-sdk-core'
+// import { Trans } from '@lingui/macro'
 import { darken } from 'polished'
 import { useState } from 'react'
-import { Repeat } from 'react-feather'
+// import { Repeat } from 'react-feather'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { Flex } from 'rebass'
+// import { Flex } from 'rebass'
 import styled, { keyframes } from 'styled-components'
 
-import { ReactComponent as MasterCard } from 'assets/buy-crypto/master-card.svg'
-import { ReactComponent as Visa } from 'assets/buy-crypto/visa.svg'
-import { ReactComponent as Dollar } from 'assets/svg/dollar.svg'
+// import { ReactComponent as MasterCard } from 'assets/buy-crypto/master-card.svg'
+// import { ReactComponent as Visa } from 'assets/buy-crypto/visa.svg'
+// import { ReactComponent as Dollar } from 'assets/svg/dollar.svg'
 import { ReactComponent as DropdownSVG } from 'assets/svg/down.svg'
-import DiscoverIcon from 'components/Icons/DiscoverIcon'
-import Menu, { NewLabel } from 'components/Menu'
+// import DiscoverIcon from 'components/Icons/DiscoverIcon'
+import Menu from 'components/Menu'
 import Settings from 'components/Settings'
-import { TutorialIds } from 'components/Tutorial/TutorialSwap/constant'
+// import { TutorialIds } from 'components/Tutorial/TutorialSwap/constant'
 import Web3Network from 'components/Web3Network'
-import { PROMM_ANALYTICS_URL } from 'constants/index'
+// import { PROMM_ANALYTICS_URL } from 'constants/index'
 import { useActiveWeb3React } from 'hooks'
-import useMixpanel, { MIXPANEL_TYPE } from 'hooks/useMixpanel'
+import useMixpanel from 'hooks/useMixpanel'
 import { useWindowSize } from 'hooks/useWindowSize'
 import { useIsDarkMode } from 'state/user/hooks'
 import { ExternalLink } from 'theme/components'
 
-import Row, { RowFixed } from '../Row'
+import { RowFixed } from '../Row'
 import Web3Status from '../Web3Status'
 
-const VisaSVG = styled(Visa)`
-  path {
-    fill: ${({ theme }) => theme.text};
-  }
-`
+// const VisaSVG = styled(Visa)`
+//   path {
+//     fill: ${({ theme }) => theme.text};
+//   }
+// `
 
 const HeaderFrame = styled.div`
   display: grid;
@@ -101,13 +102,13 @@ const HeaderRow = styled(RowFixed)`
   `};
 `
 
-const HeaderLinks = styled(Row)`
-  justify-content: center;
+// const HeaderLinks = styled(Row)`
+//   justify-content: center;
 
-  ${({ theme }) => theme.mediaWidth.upToLarge`
-    justify-content: flex-end;
-  `};
-`
+//   ${({ theme }) => theme.mediaWidth.upToLarge`
+//     justify-content: flex-end;
+//   `};
+// `
 
 const IconImage = styled.img`
   width: 140px;
@@ -133,25 +134,25 @@ const AccountElement = styled.div<{ active: boolean }>`
   cursor: pointer;
 `
 
-const AnalyticsWrapper = styled.span`
-  @media (max-width: 1320px) {
-    display: none;
-  }
-`
+// const AnalyticsWrapper = styled.span`
+//   @media (max-width: 1320px) {
+//     display: none;
+//   }
+// `
 
-const DiscoverWrapper = styled.span`
-  ${({ theme }) => theme.mediaWidth.upToExtraSmall`
-    display: none;
-  `};
-`
+// const DiscoverWrapper = styled.span`
+//   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
+//     display: none;
+//   `};
+// `
 
-const CampaignWrapper = styled.span``
+// const CampaignWrapper = styled.span``
 
-const AboutWrapper = styled.span`
-  @media (max-width: 1440px) {
-    display: none;
-  }
-`
+// const AboutWrapper = styled.span`
+//   @media (max-width: 1440px) {
+//     display: none;
+//   }
+// `
 
 const Title = styled(Link)`
   display: flex;

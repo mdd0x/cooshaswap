@@ -41,7 +41,7 @@ export function SwitchLocaleLink() {
 
     return (
       <Container>
-        KyberSwap available in: {<StyledInternalLink to={target}>{LOCALE_LABEL[targetLocale]}</StyledInternalLink>}
+        Coosha Swap available in: {<StyledInternalLink to={target}>{LOCALE_LABEL[targetLocale]}</StyledInternalLink>}
       </Container>
     )
   }

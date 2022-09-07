@@ -11,8 +11,7 @@ import styled from 'styled-components'
 
 import CopyHelper from 'components/Copy'
 import Divider from 'components/Divider'
-import Wallet from 'components/Icons/Wallet'
-import { PROMM_ANALYTICS_URL, SUPPORTED_WALLETS } from 'constants/index'
+import { SUPPORTED_WALLETS } from 'constants/index'
 import useTheme from 'hooks/useTheme'
 
 import CoinbaseWalletIcon from '../../assets/images/coinbaseWalletIcon.svg'

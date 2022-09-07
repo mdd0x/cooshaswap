@@ -1,20 +1,22 @@
-import { Trans, t } from '@lingui/macro'
+import { t } from '@lingui/macro'
 import React from 'react'
 import { useMedia } from 'react-use'
-import { Flex, Text } from 'rebass'
+import { Flex } from 'rebass'
 import styled from 'styled-components'
 
-import { Telegram } from 'components/Icons'
-import Discord from 'components/Icons/Discord'
-import Medium from 'components/Icons/Medium'
-import PoweredByIconDark from 'components/Icons/PoweredByIconDark'
-import PoweredByIconLight from 'components/Icons/PoweredByIconLight'
-import TwitterIcon from 'components/Icons/TwitterIcon'
+// import { Telegram } from 'components/Icons'
+// import Discord from 'components/Icons/Discord'
+// import Medium from 'components/Icons/Medium'
+// import PoweredByIconDark from 'components/Icons/PoweredByIconDark'
+// import PoweredByIconLight from 'components/Icons/PoweredByIconLight'
+// import TwitterIcon from 'components/Icons/TwitterIcon'
 import InfoHelper from 'components/InfoHelper'
-import { KYBER_NETWORK_DISCORD_URL, KYBER_NETWORK_TWITTER_URL } from 'constants/index'
-import useTheme from 'hooks/useTheme'
-import { useIsDarkMode } from 'state/user/hooks'
-import { ExternalLink, ExternalLinkNoLineHeight } from 'theme'
+
+// import { KYBER_NETWORK_DISCORD_URL, KYBER_NETWORK_TWITTER_URL } from 'constants/index'
+// import useTheme from 'hooks/useTheme'
+// import { useIsDarkMode } from 'state/user/hooks'
+
+// import { ExternalLink, ExternalLinkNoLineHeight } from 'theme'
 
 const FooterWrapper = styled.div`
   background: ${({ theme }) => theme.buttonGray + '33'};
@@ -82,7 +84,7 @@ const Item = styled.div`
 `
 
 export const FooterSocialLink = () => {
-  const theme = useTheme()
+  // const theme = useTheme()
   return (
     <Flex alignItems="center" justifyContent="center" sx={{ gap: '24px' }}>
       {/* <ExternalLinkNoLineHeight href="https://t.me/kybernetwork">
@@ -102,7 +104,7 @@ export const FooterSocialLink = () => {
 }
 
 function Footer() {
-  const isDarkMode = useIsDarkMode()
+  // const isDarkMode = useIsDarkMode()
   const above768 = useMedia('(min-width: 768px)')
 
   return (
