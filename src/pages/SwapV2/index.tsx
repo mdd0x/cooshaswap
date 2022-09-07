@@ -709,31 +709,31 @@ export default function Swap({ history }: RouteComponentProps) {
       />
       <PageWrapper>
         <Banner />
-        <TopTrendingSoonTokensInCurrentNetwork />
+        {/* <TopTrendingSoonTokensInCurrentNetwork /> */}
         <Container>
           <SwapFormWrapper isShowTutorial={isShowTutorial}>
             <RowBetween mb={'16px'}>
               <TabContainer>
                 <TabWrapper>
                   <Tab onClick={() => setActiveTab(TAB.SWAP)} isActive={activeTab === TAB.SWAP}>
-                    <Text fontSize={20} fontWeight={500}>{t`Swap`}</Text>
+                    <Text fontSize={20} fontWeight={500}>{t`Coosha Swap`}</Text>
                   </Tab>
                 </TabWrapper>
               </TabContainer>
 
               <SwapFormActions>
-                <Tutorial
+                {/* <Tutorial
                   type={TutorialType.SWAP}
                   customIcon={
                     <StyledActionButtonSwapForm>
                       <TutorialIcon />
                     </StyledActionButtonSwapForm>
                   }
-                />
-                <MobileTokenInfo
+                /> */}
+                {/* <MobileTokenInfo
                   currencies={currencies}
                   onClick={() => setActiveTab(prev => (prev === TAB.INFO ? TAB.SWAP : TAB.INFO))}
-                />
+                /> */}
                 <ShareButtonWithModal
                   url={shareUrl}
                   onShared={() => {
@@ -759,13 +759,13 @@ export default function Swap({ history }: RouteComponentProps) {
               </SwapFormActions>
             </RowBetween>
 
-            <RowBetween mb={'16px'}>
+            {/* <RowBetween mb={'16px'}>
               <PairSuggestion
                 ref={refSuggestPair}
                 onSelectSuggestedPair={onSelectSuggestedPair}
                 setShowModalImportToken={setShowingPairSuggestionImport}
               />
-            </RowBetween>
+            </RowBetween> */}
 
             <AppBodyWrapped data-highlight={shouldHighlightSwapBox} id={TutorialIds.SWAP_FORM}>
               {activeTab === TAB.SWAP && (
@@ -844,7 +844,7 @@ export default function Swap({ history }: RouteComponentProps) {
                                   </Trans>{' '}
                                   <Trans>
                                     <Text color={theme.primary} fontWeight={500} as="span">
-                                      KyberSwap
+                                      Coosha Swap
                                     </Text>{' '}
                                     gets you the best token rates
                                   </Trans>
@@ -894,7 +894,7 @@ export default function Swap({ history }: RouteComponentProps) {
 
                     <TradeTypeSelection />
 
-                    <TrendingSoonTokenBanner currencies={currencies} style={{ marginTop: '24px' }} />
+                    {/* <TrendingSoonTokenBanner currencies={currencies} style={{ marginTop: '24px' }} /> */}
 
                     {trade?.priceImpact === -1 ? (
                       <PriceImpactHigh>

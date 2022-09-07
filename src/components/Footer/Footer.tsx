@@ -85,7 +85,7 @@ export const FooterSocialLink = () => {
   const theme = useTheme()
   return (
     <Flex alignItems="center" justifyContent="center" sx={{ gap: '24px' }}>
-      <ExternalLinkNoLineHeight href="https://t.me/kybernetwork">
+      {/* <ExternalLinkNoLineHeight href="https://t.me/kybernetwork">
         <Telegram size={16} color={theme.subText} />
       </ExternalLinkNoLineHeight>
       <ExternalLinkNoLineHeight href={KYBER_NETWORK_TWITTER_URL}>
@@ -96,7 +96,7 @@ export const FooterSocialLink = () => {
       </ExternalLinkNoLineHeight>
       <ExternalLinkNoLineHeight href={`https://blog.kyber.network`}>
         <Medium />
-      </ExternalLinkNoLineHeight>
+      </ExternalLinkNoLineHeight> */}
     </Flex>
   )
 }
@@ -109,22 +109,22 @@ function Footer() {
     <FooterWrapper>
       <FooterContent>
         <InfoWrapper>
-          <Item>
+          {/* <Item>
             <Text marginRight="6px">
               <Trans>Powered By</Trans>
             </Text>
             <ExternalLink href="https://kyber.network" style={{ display: 'flex' }}>
               {isDarkMode ? <PoweredByIconDark width={48} /> : <PoweredByIconLight width={48} />}
             </ExternalLink>
-          </Item>
+          </Item> */}
           <Separator />
 
           <Item>
-            <Text marginRight="6px" display="flex">
+            {/* <Text marginRight="6px" display="flex">
               <Trans>Audited By</Trans>
               {!above768 && <InfoHelper size={14} text={t`Covers smart-contracts`} placement="top" />}
-            </Text>
-            <ExternalLink href="https://chainsecurity.com/security-audit/kyberswap-elastic" style={{ display: 'flex' }}>
+            </Text> */}
+            {/* <ExternalLink href="https://chainsecurity.com/security-audit/kyberswap-elastic" style={{ display: 'flex' }}>
               <img
                 src={
                   !isDarkMode
@@ -134,7 +134,7 @@ function Footer() {
                 alt=""
                 width="98px"
               />
-            </ExternalLink>
+            </ExternalLink> */}
             {above768 && <InfoHelper size={14} text={t`Covers smart-contracts`} placement="top" />}
           </Item>
         </InfoWrapper>

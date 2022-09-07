@@ -200,16 +200,16 @@ export default function Menu() {
           </MenuButton>
         )}
 
-        {bridgeLink && (
+        {/* {bridgeLink && (
           <MenuItem href={bridgeLink}>
             <Share2 size={14} />
             <Text width="max-content">
               <Trans>Bridge Assets</Trans>
             </Text>
           </MenuItem>
-        )}
+        )} */}
 
-        {!above768 && (
+        {/* {!above768 && (
           <NavMenuItem to={'/discover?tab=trending_soon'} onClick={toggle}>
             <DiscoverIcon size={14} />
             <SlideToUnlock>
@@ -221,58 +221,68 @@ export default function Menu() {
               <Trans>New</Trans>
             </NewLabel>
           </NavMenuItem>
-        )}
+        )} */}
 
-        {!above768 && (
+        {/* {!above768 && (
           <NavMenuItem to="/farms" onClick={toggle}>
             <MoneyBagOutline size={16} />
             <Trans>Farm</Trans>
           </NavMenuItem>
-        )}
+        )} */}
 
-        {under369 && (
+        {/* {under369 && (
           <NavMenuItem to="/campaigns" onClick={toggle}>
             <Award size={14} />
             <Trans>Campaigns</Trans>
           </NavMenuItem>
-        )}
+        )} */}
 
-        {under1440 && <AboutPageDropwdown />}
+        {/* {under1440 && <AboutPageDropwdown />} */}
 
-        <NavMenuItem to="/referral" onClick={toggle}>
+        {/* <NavMenuItem to="/referral" onClick={toggle}>
           <UserPlus size={14} />
           <Trans>Referral</Trans>
-        </NavMenuItem>
-        {!above1321 && (
+        </NavMenuItem> */}
+        {/* {!above1321 && (
           <MenuItem id="link" href={DMM_ANALYTICS_URL[chainId as ChainId]}>
             <PieChart size={14} />
             <Trans>Analytics</Trans>
           </MenuItem>
-        )}
-        <MenuItem id="link" href="https://docs.kyberswap.com">
+        )} */}
+        {/* <MenuItem id="link" href="https://docs.kyberswap.com">
           <BookOpen size={14} />
           <Trans>Docs</Trans>
-        </MenuItem>
-        <MenuItem id="link" href="https://gov.kyber.org">
+        </MenuItem> */}
+
+        {/* <MenuItem id="link" href="https://gov.kyber.org">
           <MessageCircle size={14} />
           <Trans>Forum</Trans>
-        </MenuItem>
+        </MenuItem> */}
 
-        <MenuItem id="link" href="/15022022KyberSwapTermsofUse.pdf">
+        {/* <MenuItem id="link" href="/15022022KyberSwapTermsofUse.pdf">
           <FileText size={14} />
           <Trans>Terms</Trans>
-        </MenuItem>
-        {process.env.REACT_APP_MAINNET_ENV !== 'production' && (
+        </MenuItem> */}
+
+        {/* {process.env.REACT_APP_MAINNET_ENV !== 'production' && (
           <NavMenuItem to="/swap-legacy" onClick={toggle}>
             <Triangle size={14} />
             <Trans>Swap Legacy</Trans>
           </NavMenuItem>
-        )}
-        <MenuItem id="link" href="https://forms.gle/gLiNsi7iUzHws2BY8">
-          <Edit size={14} />
-          <Trans>Contact Us</Trans>
+        )} */}
+        <MenuItem id="link" href="https://cooshaaurora.com">
+          <Triangle size={14} />
+          <Trans>Website</Trans>
         </MenuItem>
-        <ClaimRewardButton
+        <MenuItem id="link" href="https://twitter.com/cooshaaurora">
+          <MessageCircle size={14} />
+          <Trans>Twitter</Trans>
+        </MenuItem>
+        <MenuItem id="link" href="https://t.me/cooshaaurora">
+          <UserPlus size={14} />
+          <Trans>Coosha Community</Trans>
+        </MenuItem>
+        {/* <ClaimRewardButton
           disabled={!account || (!!chainId && NETWORKS_INFO[chainId].classic.claimReward === '') || pendingTx}
           onClick={() => {
             mixpanelHandler(MIXPANEL_TYPE.CLAIM_REWARDS_INITIATED)
@@ -286,7 +296,7 @@ export default function Menu() {
           ) : (
             <Trans>Claim Rewards</Trans>
           )}
-        </ClaimRewardButton>
+        </ClaimRewardButton> */}
         {!!process.env.REACT_APP_TAG && (
           <Text
             fontSize="10px"

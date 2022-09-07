@@ -136,7 +136,7 @@ export default function SettingsTab() {
       >
         {!isSelectingLanguage ? (
           <>
-            {isShowTutorialBtn && (
+            {/* {isShowTutorialBtn && (
               <RowBetween style={{ marginTop: '15px' }} id={TutorialIds.BUTTON_VIEW_GUIDE_SWAP}>
                 <RowFixed>
                   <StyledLabel>
@@ -149,16 +149,16 @@ export default function SettingsTab() {
                   </StyledLabel>
                 </ButtonViewGuide>
               </RowBetween>
-            )}
+            )} */}
 
-            <RowBetween style={{ marginTop: '15px' }}>
+            {/* <RowBetween style={{ marginTop: '15px' }}>
               <RowFixed>
                 <StyledLabel>
                   <Trans>Dark Mode</Trans>
                 </StyledLabel>
               </RowFixed>
               <ThemeToggle id="toggle-dark-mode-button" isDarkMode={darkMode} toggle={toggleSetDarkMode} />
-            </RowBetween>
+            </RowBetween> */}
 
             <RowBetween style={{ marginTop: '15px' }}>
               <RowFixed>

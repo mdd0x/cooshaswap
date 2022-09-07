@@ -189,7 +189,7 @@ const TopTrendingSoonTokensInCurrentNetwork = () => {
                   <Trans>Trending Soon</Trans>
                 </TextTooltip>
               </MouseoverTooltip>
-              <DiscoverIcon color={theme.subText} />
+              {/* <DiscoverIcon color={theme.subText} /> */}
             </Text>
             <ExternalLink
               href={window.location.origin + '/discover?tab=trending_soon'}
@@ -203,8 +203,8 @@ const TopTrendingSoonTokensInCurrentNetwork = () => {
                 justifyContent: 'flex-end',
               }}
             >
-              <Trans>Discover more</Trans>
-              <ChevronRight color={theme.primary} size={16} />
+              {/* <Trans>Discover more</Trans> */}
+              {/* <ChevronRight color={theme.primary} size={16} /> */}
             </ExternalLink>
           </Flex>
 

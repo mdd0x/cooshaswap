@@ -363,14 +363,14 @@ export default function AccountDetails({
             </Flex>
           </ExternalLink>
 
-          <ExternalLink href={`${PROMM_ANALYTICS_URL[chainId as ChainId]}/account/${account}`}>
+          {/* <ExternalLink href={`${PROMM_ANALYTICS_URL[chainId as ChainId]}/account/${account}`}>
             <Flex alignItems="center">
               <Wallet size={16} />
               <Text fontSize="14px" marginLeft="4px">
                 <Trans>Analyze Wallet</Trans> ↗
               </Text>
             </Flex>
-          </ExternalLink>
+          </ExternalLink> */}
         </Flex>
 
         <Flex justifyContent="space-between" marginTop="24px" paddingX="20px" sx={{ gap: '1rem' }}>

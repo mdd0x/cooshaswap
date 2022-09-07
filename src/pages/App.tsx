@@ -13,7 +13,7 @@ import styled from 'styled-components'
 import ErrorBoundary from 'components/ErrorBoundary'
 import Footer from 'components/Footer/Footer'
 import Header from 'components/Header'
-import TopBanner from 'components/Header/TopBanner'
+// import TopBanner from 'components/Header/TopBanner'
 import Loader from 'components/LocalLoader'
 import Modal from 'components/Modal'
 import Popups from 'components/Popups'
@@ -186,7 +186,7 @@ export default function App() {
         <ApolloProvider client={classicClient}>
           <Route component={DarkModeQueryParamReader} />
           <AppWrapper>
-            <TopBanner />
+            {/* <TopBanner /> */}
             <HeaderWrapper>
               <Header />
             </HeaderWrapper>

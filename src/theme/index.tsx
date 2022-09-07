@@ -51,14 +51,14 @@ export function colors(darkMode: boolean): Colors {
     disableText: darkMode ? '#373737' : '#B6B6B6',
 
     // backgrounds
-    background: darkMode ? '#1C1C1C' : '#ffffff',
-    background2: darkMode ? '#1C1C1C' : '#f5f5f5',
-    tabActive: darkMode ? '#313131' : '#ffffff',
+    background: darkMode ? '#11141b' : '#ffffff',
+    background2: darkMode ? '#11141b' : '#f5f5f5',
+    tabActive: darkMode ? '#000' : '#ffffff',
     tabBackgound: darkMode ? '#0F0F0F' : '#E2E2E2',
 
-    tableHeader: darkMode ? '#313131' : '#FBFBFB',
+    tableHeader: darkMode ? '#000' : '#FBFBFB',
     buttonBlack: darkMode ? '#0F0F0F' : '#f5f5f5',
-    buttonGray: darkMode ? '#292929' : '#E2E2E2',
+    buttonGray: darkMode ? '#000' : '#E2E2E2',
 
     text2: darkMode ? '#C3C5CB' : '#565A69',
     text3: darkMode ? '#6C7284' : '#888D9B',
@@ -360,6 +360,7 @@ export const ThemedGlobalStyle = createGlobalStyle`
     > img {
       width: 24px !important;
       height: 24px !important;
+      display: none !important;
       object-fit: contain !important;
       border-radius: 0 !important;
     }
